@@ -29,7 +29,7 @@ allButtons.forEach(item => {
   item.addEventListener("click", function(e) {
     inputString += e.target.value;
     currentResult.innerHTML = inputString
-      .replace(/\*/g, "")
+      .replace(/\*/g, "&times")
       .replace(/\//g, "&divide");
   });
 });
